@@ -4,10 +4,9 @@ class Cupcakes
   end
 
   def sweetest
-    @cupcakes.sort_by {|cupcake|
-      cupcake.sugar
-    }.last
+    @cupcakes.sort_by {|cupcake| cupcake.sugar }.last
   end
+
 
   def <<(cupcake)
     @cupcakes << cupcake
